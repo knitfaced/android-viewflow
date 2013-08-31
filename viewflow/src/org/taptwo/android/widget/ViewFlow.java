@@ -659,9 +659,9 @@ public class ViewFlow extends AdapterView<Adapter> {
 		
 		//Check the count again before adding the child.
 		//This allows the adapter to be resized dynamically in the getView method if you have a non-constant data set.
-		if (position >= mAdapter.getCount()) {
-			throw new ViewOutOfBoundsException();
-		}
+//		if (position >= mAdapter.getCount()) {
+//			throw new ViewOutOfBoundsException();
+//		}
 		return setupChild(view, addToEnd, convertView != null);
 	}
 
